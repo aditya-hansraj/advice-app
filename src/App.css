@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* ------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.app {
+  height: 100%;
+  /* background-color: #22ced1;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png"); */
+  background-color: #22ced1;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");  
+  /* background-size: cover; */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.1);
+  border-radius: 1em;
+  padding: 3em;
+  width: 50%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px;
+}
+
+.heading {
+  font-weight: 500;
+  display: flex;
+  height: 5em;
+  align-items: center;
+  margin: 2em 0 0 0;
+}
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 1em;
+  font-weight: 500;
+  font-size: 1.5em;
+  border-radius: 1em;
+  outline: none;
+  border: 1px solid whitesmoke;
+  margin: 4em 0 0 0;
+  color: whitesmoke;
+  background-color: #0eafb1;
+}
+
+.btn:hover {
+  border: 2px solid white;
+  padding: 0.95em;
+  background-color: #10bcbe;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    font-weight: 300;
+  }
+}
